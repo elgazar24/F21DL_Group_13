@@ -1,0 +1,25 @@
+{
+    "datasets_info" : {
+        "datasets_path" : "../assets/datasets",
+        "datasets_count" : 3 ,
+        "datasets" : [
+            {
+                "name" : "KG_Chronic_Kidney_Disease_(CKD)_Clinical_Dataset",
+                "info" : "assets/datasets/KG_Chronic_Kidney_Disease_(CKD)_Clinical_Dataset/info.md",
+                "data" : "assets/datasets/KG_Chronic_Kidney_Disease_(CKD)_Clinical_Dataset/data/Training_CKD_dataset.csv"
+            },
+            {
+                "name" : "KG_Kidney_Disease_Dataset",
+                "info" : "assets/datasets/KG_Kidney_Disease_Dataset/info.md",
+                "data" : "assets/datasets/KG_Kidney_Disease_Dataset/data/kidney_disease_dataset.csv"
+            },
+            {
+                "name" : "UCI_Chronic_Kidney_Disease_Dataset",
+                "info" : "assets/datasets/UCI_Chronic_Kidney_Disease_Dataset/info.md",
+                "data" : "assets/datasets/UCI_Chronic_Kidney_Disease_Dataset/data/chronic_kidney_disease.arff"
+            }
+        ]
+
+
+    }
+}
