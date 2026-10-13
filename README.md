@@ -4,7 +4,7 @@
 
 ## Project Title
 Predicting chronic kidney disease risk levels from routine clinical and lab data.
-
+Slides for our Week 4 pitch (D1): [Google Slides](https://docs.google.com/presentation/d/1LMRjklbKKLpH8KWzmb_4cJSpjSxDISyWvRHFlxDe3hg/edit?usp=sharing)
 ---
 
 ## Group Members
