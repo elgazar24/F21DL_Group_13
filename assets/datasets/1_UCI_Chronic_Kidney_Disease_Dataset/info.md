@@ -8,7 +8,10 @@
 - Number of instance : 400
 - Number of features : 24
 - Type of DS : Classification/Tabular
-- Number of classes : 2
+- Number of classes : 2 (250 ckd, 150 notckd)
+- Missing values : marked "?", 242 of 400 rows have at least one
+- Collection : Apollo Hospitals, Karaikudi, India, about 2 months, donated July 2015
+- License : CC BY 4.0
 - Source : https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease
 
 ## Usage 

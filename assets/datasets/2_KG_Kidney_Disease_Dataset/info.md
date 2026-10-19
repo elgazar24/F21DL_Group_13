@@ -94,3 +94,6 @@ Interleukin-6 (IL-6) level                      0.500     15.000     7.703     4
 - Source : https://www.kaggle.com/datasets/amanik000/kidney-disease-dataset
 
 ## Usage
+*License not given on Kaggle; the uploader states it is for machine learning and healthcare research*
+
+amanik000 (n.d.) Kidney Disease Dataset. Kaggle. Available: https://www.kaggle.com/datasets/amanik000/kidney-disease-dataset
