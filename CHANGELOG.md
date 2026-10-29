@@ -4,9 +4,9 @@ All notable changes to this project are documented here.
 The changelog is maintained from Mon 26 Oct 2026 onwards: every session or
 commit that changes the repo must be recorded here.
 
-## [Unreleased]
+## [1.0.0] - 2026-10-29
 
-### Changed - Mon 26 Oct 2026 - @melgazar - commit: `$CommitID`
+### Changed - Mon 26 Oct 2026 - @melgazar - commit: `ad8057a`
 
 1. **Repo name** - renamed the repository to meet the naming requirement in
    the [Coursework Process Handbook (v1.1)](assets/docs/uni_materials/CWProcessHandbook-v1.1.pdf).
@@ -29,7 +29,7 @@ commit that changes the repo must be recorded here.
 4. **Datasets structure** - changed [Datasets](assets/datasets) to four category dataset types
 5. **Filled the Info Files for the Datasets in more organized and accurate way**
 
-### Changed - Thu 29 Oct 2026 - @melgazar - commit: `$CommitID`
+### Changed - Thu 29 Oct 2026 - @melgazar - commit: `ad8057a`
 
 1. **configs/config.json** - rewrote as the single source for all notebooks:
    dataset folders and file paths (relative to `configs/`), target columns
