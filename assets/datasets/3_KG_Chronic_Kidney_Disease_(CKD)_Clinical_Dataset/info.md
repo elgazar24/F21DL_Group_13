@@ -1,7 +1,8 @@
-# Information About Dataset
+# Information About Dataset (KG Chronic Kidney Disease (CKD) Clinical Dataset)
 
 ## Characteristics:
 
+```
 DATASET OVERVIEW
 Instances (rows):            21000
 Columns:                     36
@@ -36,17 +37,35 @@ Chloride                     numeric (integer)      14        0        0.0      
 Bicarbonate                  numeric (integer)      18        0        0.0                                                                                                               -
 Hemoglobin                   numeric (integer)      12        0        0.0                                                                                                               -
 RBC_Count                      numeric (float)   21000        0        0.0                                                                                                               -
-WBC_Count                    numeric (integer)    6645        0        0.0                                                                                                               -...
+WBC_Count                    numeric (integer)    6645        0        0.0                                                                                                               -
+Platelet_Count               numeric (integer)   20266        0        0.0                                                                                                               -
+Packed_Cell_Volume           numeric (integer)      30        0        0.0                                                                                                               -
+Blood_Glucose_Random         numeric (integer)     130        0        0.0                                                                                                               -
+Fasting_Glucose              numeric (integer)      60        0        0.0                                                                                                               -
+HbA1c                          numeric (float)   21000        0        0.0                                                                                                               -
+Cholesterol                  numeric (integer)     130        0        0.0                                                                                                               -
+Triglycerides                numeric (integer)     200        0        0.0                                                                                                               -
+Serum_Albumin                numeric (integer)       4        0        0.0                                                                                                    [1, 2, 3, 4]
+Total_Protein                  numeric (float)   21000        0        0.0                                                                                                               -
+Diabetes                  categorical (string)       2        0        0.0                                                                                                       [No, Yes]
+Hypertension              categorical (string)       2        0        0.0                                                                                                       [No, Yes]
+Smoking_Status            categorical (string)       2        0        0.0                                                                                                       [No, Yes]
+Family_History_Kidney     categorical (string)       2        0        0.0                                                                                                       [No, Yes]
 
+TYPE COUNTS
+type
+numeric (integer)       26
+categorical (string)     5
 numeric (float)          4
 numeric (binary)         1
+Constant columns: none
 
 TARGET: Target
 Task:                  classification
 Number of classes:     5
 Class values:          ['Healthy Kidney', 'Kidney Failure (Stage 5)', 'Mild CKD (Stage 1–2)', 'Moderate CKD (Stage 3)', 'Severe CKD (Stage 4)']
                           count      %
-Target
+Target                                
 Healthy Kidney            15744  74.97
 Mild CKD (Stage 1–2)       2491  11.86
 Moderate CKD (Stage 3)     1489   7.09
@@ -88,7 +107,12 @@ Cholesterol                  150.000     279.00     214.412     37.452  0.003
 Triglycerides                100.000     299.00     199.512     58.168  0.000
 Serum_Albumin                  1.000       4.00       3.598      0.764 -1.756
 Total_Protein                  5.000       8.00       6.508      0.865 -0.012
+```
+
+## Source
+
+- https://www.kaggle.com/datasets/priyankabarik/chronic-kidney-disease-ckd-clinical-dataset
 
 ## Usage
 
-- Source : https://www.kaggle.com/datasets/priyankabarik/chronic-kidney-disease-ckd-clinical-dataset
+*Allowed only with Citation*

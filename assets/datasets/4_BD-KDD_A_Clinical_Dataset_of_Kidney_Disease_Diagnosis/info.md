@@ -1,7 +1,8 @@
-# Information About Dataset
+# Information About Dataset (BD-KDD: A Clinical Dataset of Kidney Disease Diagnosis)
 
 ## Characteristics:
 
+```
 DATASET OVERVIEW
 Instances (rows):            988
 Columns:                     26
@@ -12,6 +13,7 @@ Duplicate rows:              0
 Memory:                      200.8 KB
 Features per instance ratio: 0.0253
 
+COLUMN TYPES AND CLASSES
                       type  unique  missing  missing_%          classes
 Sl. No.  numeric (integer)     988        0        0.0                -
 Age      numeric (integer)      60        0        0.0                -
@@ -35,17 +37,24 @@ Rbcc       numeric (float)      26        0        0.0                -
 Htn       numeric (binary)       2        0        0.0           [0, 1]
 Dm        numeric (binary)       2        0        0.0           [0, 1]
 Cad       numeric (binary)       2        0        0.0           [0, 1]
-Appet     numeric (binary)       2        0        0.0           [0, 1]...
+Appet     numeric (binary)       2        0        0.0           [0, 1]
+Pe        numeric (binary)       2        0        0.0           [0, 1]
+Ane       numeric (binary)       2        0        0.0           [0, 1]
+Class     numeric (binary)       2        0        0.0           [0, 1]
 
+TYPE COUNTS
+type
+numeric (binary)     11
 numeric (integer)    10
 numeric (float)       5
+Constant columns: none
 
 TARGET: Class
 Task:                  classification
 Number of classes:     2
 Class values:          [0, 1]
        count      %
-Class
+Class              
 1        507  51.32
 0        481  48.68
 Imbalance ratio (max/min): 1.05
@@ -78,9 +87,12 @@ Cad         0.000      1.000     0.499     0.500  0.004
 Appet       0.000      1.000     0.504     0.500 -0.016
 Pe          0.000      1.000     0.486     0.500  0.057
 Ane         0.000      1.000     0.518     0.500 -0.073
-Class       0.000      1.000     0.513     0.500 -0.053
+```
 
-- Source : https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MB1LES
-  , https://pmc.ncbi.nlm.nih.gov/articles/PMC13092092/#_ad93_
+## Source
+
+- https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MB1LES
 
 ## Usage
+
+*Allowed only with Citation*

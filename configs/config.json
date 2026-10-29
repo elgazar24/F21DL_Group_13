@@ -1,25 +1,291 @@
 {
-    "datasets_info" : {
-        "datasets_path" : "../assets/datasets",
-        "datasets_count" : 3 ,
-        "datasets" : [
-            {
-                "name" : "KG_Chronic_Kidney_Disease_(CKD)_Clinical_Dataset",
-                "info" : "assets/datasets/KG_Chronic_Kidney_Disease_(CKD)_Clinical_Dataset/info.md",
-                "data" : "assets/datasets/KG_Chronic_Kidney_Disease_(CKD)_Clinical_Dataset/data/Training_CKD_dataset.csv"
+    "project": {
+        "name": "F21DL PG Group 13",
+        "topic": "Predicting Chronic Kidney Disease"
+    },
+    "paths": {
+        "datasets_dir": "../assets/datasets",
+        "docs_dir": "../assets/docs"
+    },
+    "training": {
+        "random_state": 42
+    },
+    "datasets": {
+        "main_dataset": "DS2",
+        "list": {
+            "DS1": {
+                "name": "UCI Chronic Kidney Disease Dataset",
+                "folder": "1_UCI_Chronic_Kidney_Disease_Dataset",
+                "source": "https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease",
+                "citation": "L. Rubini, P. Soundarapandian, and P. Eswaran. \"Chronic Kidney Disease,\" UCI Machine Learning Repository, 2015. https://doi.org/10.24432/C5G020",
+                "target": {
+                    "column": "class",
+                    "task": "classification",
+                    "values": [
+                        "ckd",
+                        "notckd"
+                    ]
+                },
+                "na_values": [
+                    "?"
+                ],
+                "features": {
+                    "age": "numeric (float)",
+                    "bp": "numeric (float)",
+                    "sg": "numeric (float)",
+                    "al": "numeric (float)",
+                    "su": "numeric (float)",
+                    "rbc": "categorical (string)",
+                    "pc": "categorical (string)",
+                    "pcc": "categorical (string)",
+                    "ba": "categorical (string)",
+                    "bgr": "numeric (float)",
+                    "bu": "numeric (float)",
+                    "sc": "numeric (float)",
+                    "sod": "numeric (float)",
+                    "pot": "numeric (float)",
+                    "hemo": "numeric (float)",
+                    "pcv": "numeric (float)",
+                    "wbcc": "numeric (float)",
+                    "rbcc": "numeric (float)",
+                    "htn": "categorical (string)",
+                    "dm": "categorical (string)",
+                    "cad": "categorical (string)",
+                    "appet": "categorical (string)",
+                    "pe": "categorical (string)",
+                    "ane": "categorical (string)"
+                },
+                "files": {
+                    "original": {
+                        "data": "original_data/chronic_kidney_disease.csv"
+                    },
+                    "cleaned": [
+                        "cleaned_data/DS1_cleaned.csv"
+                    ],
+                    "processed": [],
+                    "final": []
+                },
+                "selected_features": [
+                    "sc",
+                    "hemo",
+                    "sg",
+                    "al",
+                    "htn",
+                    "dm",
+                    "bgr",
+                    "pot",
+                    "bu",
+                    "bp",
+                    "pe",
+                    "pc"
+                ]
             },
-            {
-                "name" : "KG_Kidney_Disease_Dataset",
-                "info" : "assets/datasets/KG_Kidney_Disease_Dataset/info.md",
-                "data" : "assets/datasets/KG_Kidney_Disease_Dataset/data/kidney_disease_dataset.csv"
+            "DS2": {
+                "name": "KG Kidney Disease Dataset",
+                "folder": "2_KG_Kidney_Disease_Dataset",
+                "source": "https://www.kaggle.com/datasets/amanik000/kidney-disease-dataset",
+                "target": {
+                    "column": "Target",
+                    "task": "classification",
+                    "values": [
+                        "No_Disease",
+                        "Low_Risk",
+                        "Moderate_Risk",
+                        "High_Risk",
+                        "Severe_Disease"
+                    ],
+                    "ordinal_values": [
+                        "Low_Risk",
+                        "Moderate_Risk",
+                        "High_Risk",
+                        "Severe_Disease"
+                    ]
+                },
+                "na_values": [],
+                "features": {
+                    "Age of the patient": "numeric (integer)",
+                    "Blood pressure (mm/Hg)": "numeric (integer)",
+                    "Specific gravity of urine": "numeric (float)",
+                    "Albumin in urine": "numeric (integer)",
+                    "Sugar in urine": "numeric (integer)",
+                    "Red blood cells in urine": "categorical (string)",
+                    "Pus cells in urine": "categorical (string)",
+                    "Pus cell clumps in urine": "categorical (string)",
+                    "Bacteria in urine": "categorical (string)",
+                    "Random blood glucose level (mg/dl)": "numeric (integer)",
+                    "Blood urea (mg/dl)": "numeric (float)",
+                    "Serum creatinine (mg/dl)": "numeric (float)",
+                    "Sodium level (mEq/L)": "numeric (float)",
+                    "Potassium level (mEq/L)": "numeric (float)",
+                    "Hemoglobin level (gms)": "numeric (float)",
+                    "Packed cell volume (%)": "numeric (integer)",
+                    "White blood cell count (cells/cumm)": "numeric (integer)",
+                    "Red blood cell count (millions/cumm)": "numeric (float)",
+                    "Hypertension (yes/no)": "categorical (string)",
+                    "Diabetes mellitus (yes/no)": "categorical (string)",
+                    "Coronary artery disease (yes/no)": "categorical (string)",
+                    "Appetite (good/poor)": "categorical (string)",
+                    "Pedal edema (yes/no)": "categorical (string)",
+                    "Anemia (yes/no)": "categorical (string)",
+                    "Estimated Glomerular Filtration Rate (eGFR)": "numeric (float)",
+                    "Urine protein-to-creatinine ratio": "numeric (float)",
+                    "Urine output (ml/day)": "numeric (integer)",
+                    "Serum albumin level": "numeric (float)",
+                    "Cholesterol level": "numeric (integer)",
+                    "Parathyroid hormone (PTH) level": "numeric (float)",
+                    "Serum calcium level": "numeric (float)",
+                    "Serum phosphate level": "numeric (float)",
+                    "Family history of chronic kidney disease": "categorical (string)",
+                    "Smoking status": "categorical (string)",
+                    "Body Mass Index (BMI)": "numeric (float)",
+                    "Physical activity level": "categorical (string)",
+                    "Duration of diabetes mellitus (years)": "numeric (integer)",
+                    "Duration of hypertension (years)": "numeric (integer)",
+                    "Cystatin C level": "numeric (float)",
+                    "Urinary sediment microscopy results": "categorical (string)",
+                    "C-reactive protein (CRP) level": "numeric (float)",
+                    "Interleukin-6 (IL-6) level": "numeric (float)"
+                },
+                "files": {
+                    "original": {
+                        "data": "original_data/kidney_disease_dataset.csv"
+                    },
+                    "engineering": "original_data/kidney_disease_dataset_processed.csv",
+                    "cleaned": [],
+                    "processed": [],
+                    "final": []
+                },
+                "selected_features": [
+                    "Specific gravity of urine",
+                    "Packed cell volume (%)",
+                    "Sodium level (mEq/L)",
+                    "Urine protein-to-creatinine ratio",
+                    "Sugar in urine",
+                    "Cholesterol level",
+                    "Albumin in urine",
+                    "Pus cells in urine",
+                    "Appetite (good/poor)",
+                    "Cystatin C level",
+                    "Coronary artery disease (yes/no)",
+                    "Red blood cells in urine",
+                    "Hypertension (yes/no)",
+                    "Anemia (yes/no)",
+                    "Pedal edema (yes/no)"
+                ]
             },
-            {
-                "name" : "UCI_Chronic_Kidney_Disease_Dataset",
-                "info" : "assets/datasets/UCI_Chronic_Kidney_Disease_Dataset/info.md",
-                "data" : "assets/datasets/UCI_Chronic_Kidney_Disease_Dataset/data/chronic_kidney_disease.arff"
+            "DS3": {
+                "name": "KG Chronic Kidney Disease (CKD) Clinical Dataset",
+                "folder": "3_KG_Chronic_Kidney_Disease_(CKD)_Clinical_Dataset",
+                "source": "https://www.kaggle.com/datasets/priyankabarik/chronic-kidney-disease-ckd-clinical-dataset",
+                "target": {
+                    "column": "Target",
+                    "task": "classification",
+                    "values": [
+                        "Healthy Kidney",
+                        "Mild CKD (Stage 1–2)",
+                        "Moderate CKD (Stage 3)",
+                        "Severe CKD (Stage 4)",
+                        "Kidney Failure (Stage 5)"
+                    ]
+                },
+                "na_values": [],
+                "features": {
+                    "Age": "numeric (integer)",
+                    "Gender": "numeric (binary)",
+                    "BMI": "numeric (integer)",
+                    "Systolic_BP": "numeric (integer)",
+                    "Diastolic_BP": "numeric (integer)",
+                    "Heart_Rate": "numeric (integer)",
+                    "Serum_Creatinine": "numeric (integer)",
+                    "Blood_Urea_Nitrogen": "numeric (integer)",
+                    "eGFR": "numeric (integer)",
+                    "Urine_Albumin": "numeric (integer)",
+                    "Urine_Protein": "numeric (integer)",
+                    "Albumin_Creatinine_Ratio": "numeric (integer)",
+                    "Urine_Specific_Gravity": "numeric (float)",
+                    "Sodium": "numeric (integer)",
+                    "Potassium": "numeric (integer)",
+                    "Calcium": "numeric (integer)",
+                    "Phosphorus": "numeric (integer)",
+                    "Chloride": "numeric (integer)",
+                    "Bicarbonate": "numeric (integer)",
+                    "Hemoglobin": "numeric (integer)",
+                    "RBC_Count": "numeric (float)",
+                    "WBC_Count": "numeric (integer)",
+                    "Platelet_Count": "numeric (integer)",
+                    "Packed_Cell_Volume": "numeric (integer)",
+                    "Blood_Glucose_Random": "numeric (integer)",
+                    "Fasting_Glucose": "numeric (integer)",
+                    "HbA1c": "numeric (float)",
+                    "Cholesterol": "numeric (integer)",
+                    "Triglycerides": "numeric (integer)",
+                    "Serum_Albumin": "numeric (integer)",
+                    "Total_Protein": "numeric (float)",
+                    "Diabetes": "categorical (string)",
+                    "Hypertension": "categorical (string)",
+                    "Smoking_Status": "categorical (string)",
+                    "Family_History_Kidney": "categorical (string)"
+                },
+                "files": {
+                    "original": {
+                        "train": "original_data/Training_CKD_dataset.csv",
+                        "test": "original_data/Testing_CKD_dataset.csv"
+                    },
+                    "cleaned": [],
+                    "processed": [],
+                    "final": []
+                }
+            },
+            "DS4": {
+                "name": "BD-KDD: A Clinical Dataset of Kidney Disease Diagnosis",
+                "folder": "4_BD-KDD_A_Clinical_Dataset_of_Kidney_Disease_Diagnosis",
+                "source": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MB1LES",
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13092092/",
+                "target": {
+                    "column": "Class",
+                    "task": "classification",
+                    "values": [
+                        0,
+                        1
+                    ]
+                },
+                "na_values": [],
+                "features": {
+                    "Sl. No.": "numeric (integer)",
+                    "Age": "numeric (integer)",
+                    "Bp": "numeric (integer)",
+                    "Sg": "numeric (float)",
+                    "Al": "numeric (integer)",
+                    "Su": "numeric (integer)",
+                    "Rbc": "numeric (binary)",
+                    "Pc": "numeric (binary)",
+                    "Pcc": "numeric (binary)",
+                    "Ba": "numeric (binary)",
+                    "Bgr": "numeric (integer)",
+                    "Bu": "numeric (integer)",
+                    "Sc": "numeric (float)",
+                    "Sod": "numeric (integer)",
+                    "Pot": "numeric (float)",
+                    "Hemo": "numeric (float)",
+                    "Pcv": "numeric (integer)",
+                    "Wbcc": "numeric (integer)",
+                    "Rbcc": "numeric (float)",
+                    "Htn": "numeric (binary)",
+                    "Dm": "numeric (binary)",
+                    "Cad": "numeric (binary)",
+                    "Appet": "numeric (binary)",
+                    "Pe": "numeric (binary)",
+                    "Ane": "numeric (binary)"
+                },
+                "files": {
+                    "original": {
+                        "data": "original_data/BD-KDD Dataset.csv"
+                    },
+                    "cleaned": [],
+                    "processed": [],
+                    "final": []
+                }
             }
-        ]
-
-
+        }
     }
 }

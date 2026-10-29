@@ -1,7 +1,8 @@
-# Information About Dataset
+# Information About Dataset (KG Kidney Disease Dataset)
 
 ## Characteristics:
 
+```
 DATASET OVERVIEW
 Instances (rows):            20538
 Columns:                     43
@@ -11,7 +12,6 @@ Instances with any NaN:      0
 Duplicate rows:              0
 Memory:                      20748.1 KB
 Features per instance ratio: 0.0020
-
 
 COLUMN TYPES AND CLASSES
                                                              type  unique  missing  missing_%                                                           classes
@@ -37,20 +37,41 @@ Hypertension (yes/no)                        categorical (string)       2       
 Diabetes mellitus (yes/no)                   categorical (string)       2        0        0.0                                                         [no, yes]
 Coronary artery disease (yes/no)             categorical (string)       2        0        0.0                                                         [no, yes]
 Appetite (good/poor)                         categorical (string)       2        0        0.0                                                      [good, poor]
-Pedal edema (yes/no)                         categorical (string)       2        0        0.0                                                         [no, yes]...
+Pedal edema (yes/no)                         categorical (string)       2        0        0.0                                                         [no, yes]
+Anemia (yes/no)                              categorical (string)       2        0        0.0                                                         [no, yes]
+Estimated Glomerular Filtration Rate (eGFR)       numeric (float)    9556        0        0.0                                                                 -
+Urine protein-to-creatinine ratio                 numeric (float)     441        0        0.0                                                                 -
+Urine output (ml/day)                           numeric (integer)    2700        0        0.0                                                                 -
+Serum albumin level                               numeric (float)     251        0        0.0                                                                 -
+Cholesterol level                               numeric (integer)     201        0        0.0                                                                 -
+Parathyroid hormone (PTH) level                   numeric (float)   20538        0        0.0                                                                 -
+Serum calcium level                               numeric (float)     301        0        0.0                                                                 -
+Serum phosphate level                             numeric (float)     351        0        0.0                                                                 -
+Family history of chronic kidney disease     categorical (string)       2        0        0.0                                                         [no, yes]
+Smoking status                               categorical (string)       2        0        0.0                                                         [no, yes]
+Body Mass Index (BMI)                             numeric (float)     251        0        0.0                                                                 -
+Physical activity level                      categorical (string)       3        0        0.0                                             [high, low, moderate]
+Duration of diabetes mellitus (years)           numeric (integer)      31        0        0.0                                                                 -
+Duration of hypertension (years)                numeric (integer)      31        0        0.0                                                                 -
+Cystatin C level                                  numeric (float)     251        0        0.0                                                                 -
+Urinary sediment microscopy results          categorical (string)       2        0        0.0                                                [abnormal, normal]
+C-reactive protein (CRP) level                    numeric (float)     991        0        0.0                                                                 -
+Interleukin-6 (IL-6) level                        numeric (float)    1451        0        0.0                                                                 -
+Target                                       categorical (string)       5        0        0.0  [High_Risk, Low_Risk, Moderate_Risk, No_Disease, Severe_Disease]
 
+TYPE COUNTS
+type
+numeric (float)         17
 categorical (string)    15
 numeric (integer)       11
-
 Constant columns: none
-
 
 TARGET: Target
 Task:                  classification
 Number of classes:     5
 Class values:          ['High_Risk', 'Low_Risk', 'Moderate_Risk', 'No_Disease', 'Severe_Disease']
                 count      %
-Target
+Target                      
 No_Disease      16432  80.01
 Low_Risk         2054  10.00
 Moderate_Risk     821   4.00
@@ -58,7 +79,6 @@ High_Risk         821   4.00
 Severe_Disease    410   2.00
 Imbalance ratio (max/min): 40.08
 Majority-class baseline:   80.01%
-
 
 NUMERIC FEATURE STATS
                                                   min        max      mean       std   skew
@@ -90,7 +110,14 @@ Duration of hypertension (years)                0.000     30.000    14.947     8
 Cystatin C level                                0.500      3.000     1.749     0.719 -0.001
 C-reactive protein (CRP) level                  0.100     10.000     5.062     2.853 -0.011
 Interleukin-6 (IL-6) level                      0.500     15.000     7.703     4.192  0.009
+```
 
-- Source : https://www.kaggle.com/datasets/amanik000/kidney-disease-dataset
+## Source
+
+- https://www.kaggle.com/datasets/amanik000/kidney-disease-dataset
 
 ## Usage
+
+*Allowed only with Citation*
+
+
